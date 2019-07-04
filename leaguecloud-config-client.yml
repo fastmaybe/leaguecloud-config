@@ -1,13 +1,14 @@
 spring:
   profiles:
-    active: dev
+    active: 
+    - dev
 ---
 server: 
   port: 8201
 spring:
   profiles: dev #开发环境
   application:
-    name: leaguecloud-config-client
+    name: springcloud-study-config-client
 
 eureka:
   client:
@@ -19,7 +20,7 @@ server:
 spring:
   profiles: test #开发环境
   application:
-    name: leaguecloud-config-client
+    name: springcloud-study-config-client
 
 eureka:
   client:
